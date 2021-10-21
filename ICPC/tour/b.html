@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://imcs.dvfu.ru/cats/static/problem_text-cpid-5452465-pl-ru.html?sid=6KB1IfoR0KRCji4yBHCGcsTJ6zLEoo -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="csrf-token-name" content="csrftoken">
+<meta name="csrf-token-value" content="16aeb210e62ba397deea60373b44fd78ddac0f3008be229964487492c344b4ae731d552a0e76a1c1">
+<meta name="hmac-token-name" content="Ajax-Token">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://imcs.dvfu.ru/cats/static/images/favicon.ico" type="image/x-icon"><title>ICPC 2021 Qualifier   - Mirror for numbers</title>
+
+<link rel="stylesheet" type="text/css" href="./b_files/main.css">
+<!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
+  <script charset="utf-8" src="./b_files/5eb1fa428352e31b4eb50e0c.js.Без названия"></script>
+<script type="text/javascript" src="./b_files/jquery.min.js.Без названия"></script>
+
+
+
+  <script src="./b_files/ace.js.Без названия"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style>
+  <script src="./b_files/ext-language_tools.js.Без названия"></script><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style>
+  <script src="./b_files/editor.js.Без названия"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+function set_tex() {
+  var tex = $(this);
+  tex.data({ lite: tex.html() });
+  var magic = '~!!!~';
+  var t = tex.attr('title');
+  t = t.replace(/(\\[a-zA-Z]+)/g, '$1' + magic);
+  t = t.replace(/([a-zA-Z0-9},])\s+(?=[a-zA-Z])/g, '$1\\,');
+  t = t.replace(new RegExp(magic, 'g'), '');
+  tex.html("\\(" + t + '\\)');
+}
+
+function unset_tex() {
+  var tex = $(this);
+  var lite = tex.data().lite;
+  if (lite)
+    tex.html(lite);
+}
+
+function apply_mathjax(p) {
+  MathJax.Hub.Queue(
+    function() { p.find('span.TeX').each(set_tex); },
+    [ 'Typeset', MathJax.Hub, p[0] ]);
+}
+</script>
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+  TeX: {
+    Macros: { deg: '^\\circ', sgn: [ '\\operatorname\{sgn\}' ] }
+  },
+  'HTML-CSS': { scale: 100 },
+  SVG: { scale: 100 },
+  CommonHTML: { scale: 100 },
+  tex2jax: { ignoreClass: 'problem_text', processClass: 'TeX' },
+  skipStartupTypeset: true
+});
+MathJax.Hub.Register.StartupHook('onLoad', function () {
+    $('div.problem_text').each(function() {
+    var p = $(this);
+    if (!p.find('.basic_math')[0].checked)
+      apply_mathjax(p);
+  });
+});
+</script>
+<script type="text/javascript" src="./b_files/MathJax.js.Без названия"></script>
+<script type="text/javascript">window.MathJax || document.write('<script src="js/lib/MathJax/MathJax.js?config=TeX-AMS_CHTML"><\/script>')</script>
+<script type="text/javascript" src="./b_files/jquery.min.js.Без названия"></script>
+
+
+<style>
+  div.problem_menu { display: none; width: 100%; background-color: #eeeeee; }
+  div.problem_menu ul { list-style-type: none; padding: 0; }
+  div.problem_menu ul li { display: inline-block; padding: 3px 10px; border-right: 1px solid; }
+  div.problem_menu ul li a.problem_list_link { display: inline-block; padding-top: 2px; }
+  div.problem_menu input[type=checkbox] { display: none; }
+  div.problem_menu input[type=checkbox] + span:after { content: '\2610'; }
+  div.problem_menu input[type=checkbox]:checked + span:after { content: '\2611'; }
+  div.problem_menu ul li.last_verdict { padding-top: 2px; padding-bottom: 2px; vertical-align: bottom; }
+  div.problem_menu ul li.last_verdict span { display: inline-block; vertical-align: bottom; }
+  div.problem_menu li.langs { font-weight: bold; }
+  div.problem_menu li.langs a { font-weight: normal; }
+
+  div.problem_text table.problem_header { width: 100%; }
+  div.problem_text p, div.problem_text ul, div.problem_text ol {
+    hyphens: auto; max-width: 1000px; text-align: justify; text-indent1: 3em;
+  }
+  div.problem_text p span { text-indent: 0; }
+  div.problem_text table.thin_border { border-collapse: collapse; border: 1px; }
+  div.problem_text table.thin_border td, div.problem_text table.thin_border th { border: 1px solid black; padding: 2px; }
+  div.problem_text .ace_static_highlight { font-size: inherit; }.last_verdict .verdict { padding: 0; height: 100%; width: 4em; }
+.last_verdict .verdict table { border-collapse: collapse; width: 100%; height: 100%; color: inherit; font-weight: inherit; }
+.last_verdict .verdict table td { padding: 0 0 0 2px; }
+.last_verdict .verdict table td:first-child { width: 2em; }
+.last_verdict .verdict table td:first-child a { color: inherit; }
+.last_verdict .verdict table td:last-child div { text-align: right; background: white; margin: 2px; }
+  .cond_true { color: #008000; }
+  .cond_false { color: #800000; }
+  .submit_messages { margin: 15px 0; }
+  .submit_form { margin-top: 15px; }
+  .submit_input { margin-right: 5px; }
+  .n_item .current { border: 1px solid #4040ff; box-sizing: border-box; }
+  .nav_container { position: fixed; top: 0; right: 0; overflow: auto; max-height: 100vh; }
+  .n_item { border: 1px solid #4040ff; border-top: none; }
+  .n_item:first-of-type { border-top: 1px solid #4040ff; }
+  .n_button { width: 35px; height: 18px;  text-align: center; text-decoration: none; display: inline-block; cursor: pointer; }
+  Quiz Choice { display: block; }
+  Quiz Choice:before { font-size: larger; margin-right: 0.5em; }
+  Quiz[type=checkbox] Choice:before { content: '\2610';}
+  Quiz[type=radiogroup] Choice:before { content: '\25EF';}
+  Quiz[type=text]:not(.active) { display: block; width: 50em; height: 4ex; border: 1px solid black; }
+  @media only screen and (max-device-width: 736px) { .nav_container { display: none; } }
+</style>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script src="./b_files/theme-chrome.js.Без названия"></script><style id="ace-chrome">.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-chrome */</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {display: block; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-ex-box-test {position: absolute; width: 1px; height: 60ex}
+.mjx-line-box-test {display: table!important}
+.mjx-line-box-test span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdn.rawgit.com/mathjax/MathJax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div><noscript><img src="/299111923e15e58301f8981f6bca1ab5.gif" width="0" height="0" alt="" /></noscript>
+
+
+
+
+<div class="problem_text" id="p5452465" lang="ru">
+  <a name="prB"></a>
+
+  <h2>
+  
+  Задача B. Mirror for numbers
+  <a class="jsonly problem_menu_trigger problem_menu_click">≡</a>
+  </h2>
+  <div class="jsonly problem_menu"><ul>
+    <li><a class="problem_list_link" href="https://imcs.dvfu.ru/cats/?f=problems;cid=5400553;sid=6KB1IfoR0KRCji4yBHCGcsTJ6zLEoo">задачи</a></li>
+    <li class="problem_details_link" style="display: none"><a href="https://imcs.dvfu.ru/cats/static/problem_text-cpid-5452465-pl-ru.html?sid=6KB1IfoR0KRCji4yBHCGcsTJ6zLEoo#">детали</a></li>
+    <li><label><input type="checkbox" class="whitespace"><span></span> видимые пробелы</label></li>
+    <li><label><input type="checkbox" class="basic_math"><span></span> простые формулы</label></li>
+    <li><label><input type="checkbox" class="wide_text"><span></span> широкий текст</label></li>
+    <li><label><input type="checkbox" class="show_editor" checked="true"><span></span> редактор</label></li>
+    <li class="last_verdict" style="display: none"><span class="verdict">
+      <table><tbody><tr><td><a href="https://imcs.dvfu.ru/cats/static/problem_text-cpid-5452465-pl-ru.html?sid=6KB1IfoR0KRCji4yBHCGcsTJ6zLEoo#"></a></td><td><div></div></td></tr></tbody></table>
+    </span></li>
+        <li class="langs"><a href="https://imcs.dvfu.ru/cats/static/problem_text-cpid-5452465-pl-ru.html?sid=6KB1IfoR0KRCji4yBHCGcsTJ6zLEoo#">en</a> ru </li>
+  </ul></div>
+  <table class="problem_header">  
+  <tbody><tr>
+        <td class="narrow nobr">Входной файл:</td><td>Стандартный вход</td>
+    <td>&nbsp;</td>
+    <td class="narrow nobr">Ограничение времени:</td><td>1 сек</td>
+  </tr>
+  
+  <tr>
+        <td class="narrow nobr">Выходной файл:</td><td>Стандартный выход</td>
+    <td>&nbsp;</td>
+    <td class="narrow nobr">Ограничение памяти:</td><td>512 Мб</td>
+  </tr>
+  
+  
+  </tbody></table>
+
+  
+    <h3>Условие</h3>
+    
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">
+В уездном городе N живут натуральные числа. Сегодня у них праздник, поэтому в парке аттракционов установили новое развлечение&nbsp;— числовое зеркало. Работает оно так: запись числа переводится в двоичную систему счисления, в зеркале его цифры отражаются в обратном порядке (если двоичная запись числа оканчивалась на один или несколько нулей, они отбрасываются). Получившаяся двоичная запись переводится обратно в натуральное число. Например, если к зеркалу подойдет число 26, то его двоичная запись <span class="TeX" title="26_{10} = 11010_2"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mn&gt;26&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msub&gt;&lt;mn&gt;11010&lt;/mn&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-4" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">26</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-5" class="mjx-texatom" style=""><span id="MJXc-Node-6" class="mjx-mrow"><span id="MJXc-Node-7" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">10</span></span></span></span></span></span><span id="MJXc-Node-8" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.074em; padding-bottom: 0.286em;">=</span></span><span id="MJXc-Node-9" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-10" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">11010</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-11" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mn>26</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msub><mo>=</mo><msub><mn>11010</mn><mn>2</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-1">26_{10} = 11010_2</script></span> запишется в обратном порядке <span class="TeX" title="1011_2"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mn&gt;1011&lt;/mn&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-12" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-13" class="mjx-mrow"><span id="MJXc-Node-14" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-15" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">1011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-16" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mn>1011</mn><mn>2</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-2">1011_2</script></span> (получившийся ведущий ноль отбросится) и в зеркале все увидят число 11.
+</p>
+
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">
+К зеркалу последовательно подошли все числа, чья запись в двоичной системе счисления состоит ровно из <span class="TeX" title="d"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-17" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-18" class="mjx-mrow"><span id="MJXc-Node-19" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.499em; padding-bottom: 0.286em; padding-right: 0.003em;">d</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">d</script></span> цифр. Определите, сколько из них увидели свое отражение в зеркале ...
+</p>
+<ol cats-if="lang=ru" style="max-width: 1000px;">
+    <li>меньше, чем исходное число;</li>
+    <li>равным исходному числу;</li>
+    <li>больше, чем исходное число.</li>
+</ol>
+
+
+
+
+  
+  
+    <h3>Формат входных данных</h3>
+    
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">
+Входные данные содержат натуральное число <span class="TeX" title="d"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-20" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-21" class="mjx-mrow"><span id="MJXc-Node-22" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.499em; padding-bottom: 0.286em; padding-right: 0.003em;">d</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi></math></span></span><script type="math/tex" id="MathJax-Element-4">d</script></span>.
+</p>
+
+
+  
+  
+  
+    <h3>Формат выходных данных</h3>
+    
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">
+Выведите в трех строках три целых числа&nbsp;— ответ на задачу.
+</p>
+
+
+  
+  
+    <h3>Ограничения</h3>
+    
+<p align="justify" style="max-width: 1000px;">
+<span class="TeX" title="1 \le d \le 50"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;50&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-23" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-24" class="mjx-mrow"><span id="MJXc-Node-25" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">1</span></span><span id="MJXc-Node-26" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.499em;">≤</span></span><span id="MJXc-Node-27" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.499em; padding-bottom: 0.286em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-28" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.499em;">≤</span></span><span id="MJXc-Node-29" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">50</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>d</mi><mo>≤</mo><mn>50</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">1 \le d \le 50</script></span>
+</p>
+
+
+
+
+
+<h3 cats-if="lang=ru">Пояснение к примеру</h3> 
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">
+    В примере дано <span class="TeX" title="d = 4"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 101%; position: relative;"><span id="MJXc-Node-30" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-31" class="mjx-mrow"><span id="MJXc-Node-32" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.499em; padding-bottom: 0.286em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-33" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.074em; padding-bottom: 0.286em;">=</span></span><span id="MJXc-Node-34" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>=</mo><mn>4</mn></math></span></span><script type="math/tex" id="MathJax-Element-6">d = 4</script></span>. К зеркалу подходили числа, чья длина в двоичной системе счисления равна 4, то есть числа из диапазона от 8 до 15. 
+</p>
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">Число 8 отразилось как 1, 9 как 9, 10 как 5, 11 как 13, 12 как 3, 13 как 11, 14 как 7 и 15 как 15. 
+</p>
+<p cats-if="lang=ru" align="justify" style="max-width: 1000px;">Итого пять чисел отразились меньшими, чем исходные (8, 10, 12, 13 и 14), два&nbsp;— не изменились (9 и 15), одно отразились большим, чем исходное (11). 
+</p>
+ 
+
+
+
+  
+  
+    <h3>Примеры тестов</h3>
+    <table class="sample" id="sample5452465">
+    <tbody><tr><th>№</th>
+    <th>Стандартный вход</th>
+    <th>Стандартный выход</th></tr>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        <pre><code>4</code></pre>
+        <button type="button" class="button copy_button">скопировать</button>
+      </td>
+      <td>
+        <pre><code>5
+2
+1</code></pre>
+        <button type="button" class="button copy_button">скопировать</button>
+      </td>
+    </tr>
+    
+    </tbody></table>
+  
+  
+  <div class="submit"><div class="submit_messages"></div><form enctype="multipart/form-data" class="submit_form"><select name="de_id" id="de5230271" class="toolbar_item editor_only"><option value="by_extension" editor-syntax="">по расширению файла</option><option value="772264" editor-syntax="">Answer text</option><option value="3" editor-syntax="c_cpp">Cross-platform C/C++ compiler</option><option value="4" editor-syntax="c_cpp">GNU C++ 7.3.0</option><option value="5" editor-syntax="c_cpp">Microsoft Visual C++ 2015</option><option value="651244" editor-syntax="c_cpp">GNU C 7.3.0</option><option value="1052204" editor-syntax="c_cpp">LLVM/CLang 5.0.0</option><option value="1263178" editor-syntax="rust">Rust 1.35.0</option><option value="102" editor-syntax="pascal">Free Pascal 3.0.2</option><option value="3016" editor-syntax="pascal">Borland Delphi 7</option><option value="845906" editor-syntax="pascal">Free Pascal in Delphi mode</option><option value="934577" editor-syntax="pascal">PascalABC.NET 3.2</option><option value="578036" editor-syntax="vbscript">FreeBasic 1.05</option><option value="541874" editor-syntax="java">Java SDK 1.8.0</option><option value="3017" editor-syntax="csharp">Microsoft Visual C# 2015</option><option value="1263179" editor-syntax="golang">Go 1.8.3</option><option value="2403630" editor-syntax="kotlin">Kotlin 1.1.3</option><option value="3208814" editor-syntax="csharp">C# .NET Core 5.0</option><option value="578046" editor-syntax="perl">Perl 5.24.1</option><option value="681949" editor-syntax="python">Python 3.8.1</option><option value="684410" editor-syntax="haskell">Haskell 2011.2.0.1</option><option value="689165" editor-syntax="ruby">Ruby 1.9.3</option><option value="845694" editor-syntax="php">PHP 5.4.0</option><option value="933993" editor-syntax="erlang">Erlang 5.10</option><option value="1067097" editor-syntax="javascript">NodeJS 4.4.5</option><option value="1775708" editor-syntax="prolog">SWI Prolog 7.6.4</option><option value="4961347" editor-syntax="python">PyPy 7.3.0 (Python 3.6.9)</option></select><input type="file" name="source" size="25" class="file toolbar_item editor_only"><button type="submit" name="submit" class="button toolbar_item">отправить</button><button type="button" class="button toolbar_item">последняя попытка</button><a class="problem_menu_trigger toolbar_item">≡<div class="editor_menu"><button class="button" type="button">сбросить редактор</button><button class="button" type="button">невидимые символы</button><button class="button" type="button">авто перенос</button></div></a><br><br><div class="resizable" style="width: 749.011px; height: 232.011px;"><div id="ed_pt5452465" class="bordered ace_editor ace-chrome" style="width: 749.011px; height: 231.011px; font-size: 14px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; left: -100px;"></textarea><div class="ace_gutter" aria-hidden="true" style="display: block;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 263.719px; width: 41px;"><div class="ace_gutter-cell " style="height: 16.3594px;">1</div></div><div class="ace_gutter-active-line" style="top: 0px; height: 16.3594px;"></div></div><div class="ace_scroller" style="left: 41px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 708px; height: 263.719px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 620px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:16.359375px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:16.359375px"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 7.69727px; height: 16.3594px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 16.3594px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 41px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 708px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div><div class="resizable_line resizable_bottom_line"></div><div class="resizable_line resizable_right_line"></div></div><textarea name="source_text" cols="100" rows="15" data-editor="text" data-gutter="1" data-id="ed_pt5452465" data-init-defer="1" style="width: 749.011px; display: none;"></textarea><input type="hidden" name="problem_id" value="5230271"></form></div>
+  <hr>
+</div>
+
+<div class="nav_container">
+  
+  <div class="n_item" id="p5452465_verdict"><a href="https://imcs.dvfu.ru/cats/static/problem_text-cpid-5452465-pl-ru.html?sid=6KB1IfoR0KRCji4yBHCGcsTJ6zLEoo#p5452465" class="n_button current" title="Mirror for numbers">B</a></div>
+  
+</div>
+<script type="text/javascript">
+$('.problem_menu_click').click(function() { $(this).parent().next().toggle(); $(this).toggleClass('problem_menu_hovered'); });
+
+var query_params = (function() {
+  var url = window.location.search;
+  var qs = url.substring(url.indexOf('?') + 1).split(';');
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i] = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+  return result;
+})();
+var sid = query_params.sid;
+var uid = query_params.uid;
+var has_submit = !query_params.nosubmit;
+var rid = query_params.rid;
+
+if (sid) {
+  $('.problem_list_link').each(function() { this.href += ';sid=' + sid; });
+}
+
+function toggle_whitespace() {
+  var p = $(this).parents('.problem_text');
+  var ws = this.checked;
+  p.find('.sample code').each(function() {
+    var t = $(this).text();
+    if (ws)
+      t = t.replace(/ /g, '\u2423');
+    else
+      t = t.replace(/\u2423/g, ' ');
+    $(this).text(t);
+  });
+}
+$('.problem_text div.problem_menu input.whitespace').click(toggle_whitespace).each(toggle_whitespace);
+
+$('.basic_math').click(function() {
+  var p = $(this).parents('.problem_text');
+  if (this.checked)
+    p.find('span.TeX').each(unset_tex);
+  else
+    apply_mathjax(p);
+});
+
+function toggle_wide_text() {
+  var p = $(this).parents('.problem_text');
+  p.children('p, ul, ol').css({ 'max-width': this.checked ? 'none' : '1000px' });
+}
+$('.wide_text').click(toggle_wide_text).each(toggle_wide_text);
+
+$('.show_editor').click(function() {
+  Editor.toggle_editor_visibility($(this).parents('.problem_text'));
+});
+
+$('.problem_text div.problem_menu li.langs a').click(function() {
+  var p = document.location.pathname;
+  if (p.substring(p.length - 5) === '.html') {
+    
+    var n = '-pl-' + this.innerText;
+    document.location.pathname =
+      p.indexOf('-pl-') < 0 ? p.replace('.html', n + '.html') : p.replace(/-pl-[a-z]+/, n);
+  }
+  else {
+    var s = document.location.search;
+    document.location.search =
+      s.indexOf('pl=') < 0  ? s + ';pl=' + this.innerText : s.replace(/pl=[a-z]+/, 'pl=' + this.innerText);
+  }
+});
+
+function copy_button_click() {
+  var td = $(this).parents('td');
+  navigator.clipboard.writeText(td.find('code')[0].innerText);
+}
+$('.copy_button').click(copy_button_click);
+
+var enable_navigation = function() {
+  if (query_params.nonav) return;
+  $('.nav_container').removeClass('hidden');
+  $('.n_item a').first().addClass('current');
+  var $root = $('html, body');
+  $(document).on('click', 'a[href^="#p"]', function () {
+    $root.animate({ scrollTop: $($.attr(this, 'href')).offset().top - 10 }, 400);
+    return false;
+  });
+  var nav_links = $('.n_item a');
+  $(document).on('scroll', function() {
+    var from_top = window.scrollY;
+    $(nav_links).each(function() {
+      var link = $(this);
+      var problem_text = $(link[0].hash)[0];
+      var eps = 15;
+      problem_text.offsetTop - eps <= from_top && problem_text.offsetTop + problem_text.offsetHeight > from_top ?
+        link.addClass('current') : link.removeClass('current');
+    })
+  });
+};
+$(document).ready(enable_navigation);
+
+
+var has_quizzes = false; $(document).ready(get_last_verdicts); 
+function get_last_verdicts() {
+  if (!sid) return;
+  $.get('../?f=api_get_last_verdicts;problem_ids=5452465;sid=' + sid).success(function(result) {
+    if (!result) return;
+    for (var cpid in result) {
+      if (!result[cpid]) continue;
+      var r = result[cpid];
+      if (r.verdict) {
+        var v = $('#p' + cpid + ' .last_verdict > .verdict');
+        v.addClass('run_details_' + r.verdict);
+        v.find('a').attr('href', '../' + r.href_run_details).text(r.verdict);
+        v.find('div').html(r.failed_test || '.&nbsp;');
+        v.parent().show();
+        $('#p' + cpid + '_verdict').addClass('run_details_' + r.verdict);
+      }
+      if (r.href_problem_details) {
+        var pd = $('#p' + cpid + ' .problem_details_link');
+        pd.find('a').attr('href', '../' + r.href_problem_details);
+        pd.show();
+      }
+    }
+    if (result.can_submit && has_submit) gen_forms(result);
+  });
+}
+
+function gen_forms(problems) {
+  var gen_form = function(select_id, editor_id, problem_id, cpid) {
+    if (!problems[cpid].allowed) return;
+    var container = $('#p' + cpid).find('.submit');
+    if (container.find('form').length) return;
+    var form = $('<form>').attr({ enctype: 'multipart/form-data', class: 'submit_form hidden' });
+
+    var select = $('<select>').attr({ name: 'de_id', id: select_id, class: 'toolbar_item editor_only' });
+    var add_option = function(de_id, de_syntax, de_name) {
+      select.append($('<option>').attr({ value: de_id, 'editor-syntax': de_syntax }).text(de_name));
+    }
+     add_option('by_extension', '', 'по расширению файла');  add_option('772264', '', 'Answer text');  add_option('3', 'c_cpp', 'Cross-platform C/C++ compiler');  add_option('4', 'c_cpp', 'GNU C++ 7.3.0');  add_option('5', 'c_cpp', 'Microsoft Visual C++ 2015');  add_option('651244', 'c_cpp', 'GNU C 7.3.0');  add_option('1052204', 'c_cpp', 'LLVM/CLang 5.0.0');  add_option('1263178', 'rust', 'Rust 1.35.0');  add_option('102', 'pascal', 'Free Pascal 3.0.2');  add_option('3016', 'pascal', 'Borland Delphi 7');  add_option('845906', 'pascal', 'Free Pascal in Delphi mode');  add_option('934577', 'pascal', 'PascalABC.NET 3.2');  add_option('578036', 'vbscript', 'FreeBasic 1.05');  add_option('541874', 'java', 'Java SDK 1.8.0');  add_option('3017', 'csharp', 'Microsoft Visual C# 2015');  add_option('1263179', 'golang', 'Go 1.8.3');  add_option('2403630', 'kotlin', 'Kotlin 1.1.3');  add_option('3208814', 'csharp', 'C# .NET Core 5.0');  add_option('578046', 'perl', 'Perl 5.24.1');  add_option('681949', 'python', 'Python 3.8.1');  add_option('684410', 'haskell', 'Haskell 2011.2.0.1');  add_option('689165', 'ruby', 'Ruby 1.9.3');  add_option('845694', 'php', 'PHP 5.4.0');  add_option('933993', 'erlang', 'Erlang 5.10');  add_option('1067097', 'javascript', 'NodeJS 4.4.5');  add_option('1775708', 'prolog', 'SWI Prolog 7.6.4');  add_option('4961347', 'python', 'PyPy 7.3.0 (Python 3.6.9)'); 
+    select.appendTo(form);
+
+    $('<input>').attr({ type: 'file', name: 'source', size: '25', class: 'file toolbar_item editor_only' }).appendTo(form);
+    $('<button>').
+      attr({ type: 'submit', name: 'submit', class: 'button toolbar_item' }).
+      text('отправить').appendTo(form);
+    var sources_info_btn = $('<button>').attr({ type: 'button', class: 'button toolbar_item' })
+      .text('последняя попытка')
+      .click(get_sources_info_api).appendTo(form);
+
+    var menu_trigger = $('<a>').attr({ class: 'problem_menu_trigger toolbar_item' }).
+      html('&#x2261').click(function() { $(this).toggleClass('problem_menu_hovered'); }).appendTo(form);
+    var editor_menu = $('<div>').attr('class', 'editor_menu').appendTo(menu_trigger);
+    var add_btn = function(capt, onclick) {
+      $('<button>').attr({ class: 'button', type: 'button' }).text(capt).click(onclick).appendTo(editor_menu);
+    };
+    add_btn('сбросить редактор', function() { Editor.reset_localstorage(editor_id) });
+    add_btn('невидимые символы', function() { Editor.toggle_invisible_chars(editor_id) });
+    add_btn('авто перенос', function() { Editor.toggle_auto_wrap(editor_id) });
+    $('<br><br>').appendTo(form);
+
+    $('<textarea>').attr({
+      name: 'source_text', cols: 100, rows: 15,
+      'data-editor': 'text', 'data-gutter': '1', 'data-id': editor_id, 'data-init-defer': '1'
+    }).appendTo(form);
+    $('<input>').attr({ type: 'hidden', name: 'problem_id', value: problem_id }).appendTo(form);
+
+    $('<div>').attr({ 'class' : 'submit_messages'}).appendTo(container);
+    form.on('submit', process_submit);
+    form.appendTo(container);
+    form.removeClass('hidden');
+    Editor.init_editor(editor_id);
+    Editor.set_syntax(editor_id, select_id);
+    // Load to editor source code of requested submission.
+    if (rid) sources_info_btn.click();
+  }
+   gen_form('de5230271', 'ed_pt5452465', '5230271', '5452465'); 
+  if (has_quizzes) init_quizzes();
+}
+
+function process_submit(e) {
+  e.preventDefault();
+  var form = $(this);
+  if (has_quizzes && !is_all_quiz_input_valid(form, 'Не используйте пробелы в ответе'))
+    return;
+  var request_url = '../?f=api_submit_problem';
+  if (!sid) return;
+  request_url += ';sid=' + sid;
+
+  var form_params = form.serializeArray();
+  var form_data = new FormData();
+  var file_tag = form.find('input[type="file"]')[0];
+  form_data.append(file_tag.name, file_tag.files[0]);
+
+  for (var i = 0; i < form_params.length; i++) {
+    if (has_quizzes && form_params[i].name === 'de_id') {
+      form_params[i].value = '';
+    }
+    if (form_params[i].name === 'source_text') {
+      var editor = Editor.get_editor(form);
+      if (!editor) return false;
+      form_params[i].value = editor.getSession().getValue();
+    }
+    form_data.append(form_params[i].name, form_params[i].value);
+  }
+
+  var xhr = new XMLHttpRequest();
+  if (!xhr) {
+    return false;
+  }
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status == 200) {
+        fill_messages(xhr.response, form);
+      }
+      // TODO
+    }
+  };
+  xhr.open('POST', request_url);
+  xhr.send(form_data);
+};
+
+function fill_messages(response, form) {
+  var message_container = form.parent().find('.submit_messages');
+  response = JSON.parse(response);
+  message_container.empty();
+  var append_to_container = function(message, classes) {
+    message_container.append($('<div>', { class: classes } ).text(message));
+  }
+  if (response.de_name) {
+    append_to_container('Определена среда разработки' + ': ' + response.de_name);
+  }
+  if (response.de_not_allowed) {
+    var not_allowed = response.de_not_allowed;
+    append_to_container('Указанная среда разработки не разрешена. Допустимые среды:');
+    var de_list = $('<ul>');
+    for (var i = 0; i < not_allowed.length; i++) {
+      de_list.append('<li>' + not_allowed[i].description + '</li>');
+    }
+    message_container.append(de_list);
+  }
+  var messages = response.messages;
+  for (var i = 0; i < messages.length; i++) {
+    append_to_container(messages[i], 'messages');
+  }
+  if (response.href_run_details) {
+    var href_run_details = $("<a/>", {
+      href: '../' + response.href_run_details,
+      text: 'Просмотреть результат попытки',
+    });
+    message_container.append(href_run_details);
+  }
+}
+
+function get_sources_info_api(rid_param) {
+  if (!sid) return;
+  var form = $(this).parent();
+  var editor = Editor.get_editor(form);
+  if (!ace || !editor) return;
+  var request_url = '../?f=api_get_sources_info' + ';sid=' + sid;
+  if (uid) request_url += ';uid=' + uid;
+  if (rid_param) request_url += ';rid=' + rid_param;
+  $.ajax({
+    url: request_url,
+    data: { problem_id: form.find('input[name=problem_id]').val() },
+    success: function(response) {
+      if (response.src) {
+        editor.session.doc.setValue(response.src);
+        editor.focus();
+      }
+      if (response.de_id)
+        form.find('select[name=de_id]').val(response.de_id).change();
+      if (has_quizzes)
+        fill_quiz_forms(editor, form.parents('.problem_text'));
+    }
+  });
+}
+
+
+</script>
+<span class="timing">1.939s 0.079s 15</span>
+
+
+
+</body></html>
