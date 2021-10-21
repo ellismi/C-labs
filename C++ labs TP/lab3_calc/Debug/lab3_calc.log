@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\STUDY\c++\lab3_calc\Source.cpp(27,18): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+D:\STUDY\c++\lab3_calc\Source.cpp(53,18): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  lab3_calc.vcxproj -> D:\STUDY\c++\lab3_calc\Debug\lab3_calc.exe
